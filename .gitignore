@@ -218,3 +218,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+service-account*.json
+.env
+.env.*
+.env_encoded

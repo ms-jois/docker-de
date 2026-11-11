@@ -46,6 +46,12 @@ services:
       retries: 10
 
   kestra:
+  ai:
+    type: gemini
+    gemini:
+      model-name: gemini-2.5-flash
+      api-key: ${GEMINI_API_KEY}
+    env_file: .env_encoded
     image: kestra/kestra:v1.1
     pull_policy: always
     user: "root"
